@@ -8,9 +8,13 @@
     </head>
     <body>
         <header>
-            <div id="langSelector">한국어</div>
+            <div id="langSelector">
+                <span>한국어</span>
+                <div id="SelectButton">∨</div>
+            </div>
             <div class="clear"></div>
         </header>
+        
         <main>
             <div class="loginSection">
                 <img src="./Image/Logo.png">
@@ -40,19 +44,15 @@
             </div>
 
             <div class="simpleLoginSection">
-                <p>더욱 간편한 로그인</p>
-                <div id="simpleLoginButtons">
-                    <form action="#">
-                        <input type="button" name="QRCode">
-                        <label for="QRCode"><div id="QRCode"></div></label>
-                        <input type="button" name="disposal">
-                        <label for="disposal"><div id="disposal"></div></label>
-                    </form>
-                </div>
+                <div id="simpleLoginSectionWord">더욱 간편한 로그인</div>
+                    <div id="simpleLoginButtons">
+                        <div id="QRcode"><img src="./Image/QRCode.png"><span>QR코드 로그인</span></div>
+                        <div id="disposal"><img src="./Image/disposal.png"><span>일회용 번호 로그인</span></div>
+                    </div>
                 <div id="findSection">
                     <div id="findID">아이디 찾기</div>
                     <div id="findPassword">비밀번호 찾기</div>
-                    <div id="SingIn">회원가입</div>
+                    <div id="SingIn">회원가입   </div>
                 </div>
             </div>
 

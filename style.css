@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
@@ -19,19 +20,38 @@ body{
     margin: 0 auto;
     background: rgb(245, 245,245);
 }
-
-#langSelector{
+header{
     float: right;   
-    border: 1px solid rgba(0, 0,0,0.2);
-    box-sizing: border-box;
-    padding: 5px;
-    padding-right: 30px;
-    text-align: left;
-    margin: 20px;
-    font-size:14px;
 }
 
+/*언어 선택 영역*/
+#langSelector{
+    width: 100px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0,0,0.2);
+    margin-top: 20px;
+
+    position: relative;
+}
+#langSelector >span{
+    position: absolute;
+    font-size:12px;
+    line-height: 30px;
+    left: 5px;
+}
+#langSelector > #SelectButton{
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    font-size: 16px;
+    right: 5px;
+    line-height: 30px;
+    color: rgba(0, 0, 0,0.6);
+}
 main{
+    width: 100%;
+    min-width: 480px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -131,6 +151,65 @@ main{
 
 /*simpleLoginSection 스타일*/
 .simpleLoginSection{
-    border: 1px solid red;
     width:64%;
+    box-sizing: border-box;
+    padding-top:20px; 
+}
+.simpleLoginSection > #simpleLoginSectionWord{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+} 
+.simpleLoginSection > #simpleLoginButtons{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.simpleLoginSection > #simpleLoginButtons div{
+    width: 49%;
+    height: 55px;
+    border: 1px solid #03c75a;
+    text-align: center;
+    line-height: 55px;
+    background: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 900;
+}
+.simpleLoginSection > #simpleLoginButtons > #QRcode{
+    position: relative;
+    left: -4px;
+}
+
+.simpleLoginSection > #simpleLoginButtons > #disposal{
+    position: relative;
+    right: -4px;
+
+}
+.simpleLoginSection > #findSection {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 14px;
+}
+.simpleLoginSection > #findSection > #findID{
+    width:20%;
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+}
+.simpleLoginSection > #findSection > #findPassword{
+    width:20%;
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+}
+.simpleLoginSection > #findSection > #SingIn{
+    width:20%;
 }
