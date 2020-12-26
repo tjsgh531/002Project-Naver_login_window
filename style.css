@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
-    border: 1px dotted green;
+    font-family: sans-serif;
+   /* border: 0.5px dotted green;
+    */
 }
 .clear{
     clear: both;
@@ -34,28 +36,101 @@ main{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   border-color: blue;
 }
+
+/*LoginSection 스타일*/
 .loginSection{
     width : 80%;
     display:flex;
     align-items: center;
     flex-direction: column;
+    
 }
-
-.loginSection > #formSection {
+/*LoginSection의 Main구역 스타일*/
+.loginSection > .formSection {
     width: 80%;
-    border-color: blueviolet;    
 }
-.loginSection > #formSection > form{
+.loginSection > .formSection > form{
+
+    box-sizing: border-box;
     width:100%;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
-.loginSection > #formSection > form > input[type = text]{
+.loginSection > .formSection > form  input[type = text]{
+    width: 100%;
+    height: 50px;
+    
+    box-sizing: border-box;
+    padding-left: 10px;
+    color:rgba(0, 0, 0, 0.5);
+    border:1px solid rgba(0, 0, 0, 0.2);
+}
+.loginSection > .formSection > form > input[type = button]{
+    width: 100%;
+    height: 60px;
+    background: #03c75a;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgb(43, 173, 43);
+    margin:0;
+}
+
+/*로그인 상태유지 & IP보안 스타일*/
+.loginSection > .formfooter{
+    display: inline-block;
     width: 80%;
-    height: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3px 0;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
+/*로그인 상태 유지*/
+.loginSection > .formfooter > #keeplogin{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.loginSection > .formfooter > #keeplogin > #keeploginButton{
+    width:20px;
+    height: 20px;
+    border-radius: 20px;
+    border:2px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+ 
+}
+.loginSection > .formfooter > #keeplogin > #keeploginSentence{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left:10px; ;
+}
 
-#idBox{
-    width : 100%;
+/*IP보안*/
+.loginSection > .formfooter > #securityIP{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right:10px;
+}
+.loginSection > .formfooter > #securityIP > #securityIPWord{
+    margin-right: 10px;
+}
+.loginSection > .formfooter > #securityIP > #switchIP{
+    font-weight: 900;
+    color: #03c75a;
+}
+
+/*simpleLoginSection 스타일*/
+.simpleLoginSection{
+    border: 1px solid red;
+    width:64%;
 }
