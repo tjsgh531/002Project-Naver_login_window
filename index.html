@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>네이버: 로그인</title>
+        <link rel="shortcut icon" href="./Image/naver_logo.webp">
         <link rel="stylesheet" href="style.css">
         <script src="main.js" defer></script>
     </head>
     <body>
         <header>
-            <div id="langSelector">
+            <div id="langSelector" style="cursor: pointer;">
                 <span>한국어</span>
                 <div id="SelectButton">∨</div>
             </div>
@@ -21,18 +22,18 @@
                 
                 <div class="formSection">
                     <form action="#">
-                        <input type="text" value="아이디" name="idBox">
+                        <input type="text" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'" name="idBox">
                         <br>
-                        <input type="text" value="비밀번호" name="passwordBox">
+                        <input type="text" placeholder="비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'" name="passwordBox">
                         <br>
-                        <input type="button" name="loginButton" value="로그인">
+                        <input type="button" name="loginButton" value="로그인" style="cursor: pointer;">
                     </form>
                 </div>
 
                 <div class="formfooter">
                     <div id="keeplogin">
-                        <span id="keeploginButton"></span>
-                        <span id="keeploginSentence">로그인 상태 유지</span>
+                        <input  type="checkbox" id="keeploginButton"></input>
+                        <label for="keeploginButton" style="margin-left: 5px;"><span id="keeploginSentence">로그인 상태 유지</span></label>
                     </div>
 
                     <div id="securityIP">
@@ -50,9 +51,9 @@
                         <div id="disposal"><img src="./Image/disposal.png"><span>일회용 번호 로그인</span></div>
                     </div>
                 <div id="findSection">
-                    <div id="findID">아이디 찾기</div>
-                    <div id="findPassword">비밀번호 찾기</div>
-                    <div id="SingIn">회원가입   </div>
+                    <div style="cursor: pointer;" id="findID">아이디 찾기</div>
+                    <div style="cursor: pointer;" id="findPassword">비밀번호 찾기</div>
+                    <div style="cursor: pointer;" id="SingIn">회원가입   </div>
                 </div>
             </div>
 

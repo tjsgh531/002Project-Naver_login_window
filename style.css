@@ -16,7 +16,7 @@ html,body{
     height: 100%;
 }
 body{
-    width: 80%;
+    min-width: 840px; max-width: 960px;
     margin: 0 auto;
     background: rgb(245, 245,245);
 }
@@ -184,12 +184,13 @@ main{
 .simpleLoginSection > #simpleLoginButtons > #QRcode{
     position: relative;
     left: -4px;
+    cursor: pointer;
 }
 
 .simpleLoginSection > #simpleLoginButtons > #disposal{
     position: relative;
     right: -4px;
-
+    cursor: pointer;
 }
 .simpleLoginSection > #findSection {
     width: 100%;
